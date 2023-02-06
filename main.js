@@ -39,3 +39,13 @@ thumb.addEventListener("drag", (event) => {
       window.scrollBy(500,0);
 });
   // =========================================================================  
+window.addEventListener("wheel", (event) =>{
+      let x = event.deltaY;
+      // console.log(x);
+      if(x>0){
+      window.scrollBy(500,0);
+      }
+      else{
+        window.scrollBy(-500,0);
+      }
+    })
